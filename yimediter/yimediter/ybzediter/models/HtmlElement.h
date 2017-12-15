@@ -24,6 +24,6 @@ struct HtmlElement{
     struct HtmlElement *sub_elements;
 };
 void HtmlElementRelease(struct HtmlElement *elements,int len);
-struct HtmlElement * analy_html(const char *html,long *index, unsigned int *element_count, char *content);
+extern struct HtmlElement * analy_html(const char *html,long *index, unsigned int *element_count, char *content);
 
 #endif /* HtmlElement_h */
