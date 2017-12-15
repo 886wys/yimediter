@@ -59,8 +59,7 @@ static BOOL hexStrToRGBA(NSString *str,
 }
 +(nonnull UIColor*)colorWithHexString:(NSString*)hexStr{
     CGFloat r, g, b, a;
-    bool isSuccess = hexStrToRGBA(hexStr, &r, &g, &b, &a);
-    NSAssert(isSuccess, @"请输入正确的16进制颜色");
+    NSAssert(hexStrToRGBA(hexStr, &r, &g, &b, &a), @"请输入正确的16进制颜色");
     return [UIColor colorWithRed:r green:g blue:b alpha:a];
 }
 

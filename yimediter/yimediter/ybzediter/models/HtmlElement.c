@@ -167,7 +167,7 @@ gotoreturn:
  @param content 解析出来的内容，必须有足够的长度
  @return HtmlElement数组
  */
-extern struct HtmlElement * analy_html(const char *html,long *index, unsigned int *element_count, char *content){
+struct HtmlElement * analy_html(const char *html,long *index, unsigned int *element_count, char *content){
     //初始10个元素
     unsigned int element_len = 10;
     //申请element数组内存
