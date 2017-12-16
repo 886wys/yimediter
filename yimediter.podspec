@@ -1,10 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = 'yimediter'
-<<<<<<< HEAD
-s.version      = '0.0.9'
-=======
 s.version      = '0.1.6'
->>>>>>> dev/ybz
 s.summary      = 'A Rich Text Editor'
 s.homepage     = 'https://github.com/yiiim/yimediter'
 s.license      = 'MIT'

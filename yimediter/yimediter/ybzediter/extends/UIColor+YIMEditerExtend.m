@@ -66,4 +66,3 @@ static BOOL hexStrToRGBA(NSString *str,
 }
 
 @end
-
