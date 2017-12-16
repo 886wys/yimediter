@@ -10,6 +10,7 @@
 
 @interface UIColor (YIMEditerExtend)
 
--(NSString*)hexString;
+-(nonnull NSString*)hexString;
++(nonnull UIColor*)colorWithHexString:(nonnull NSString*)hexStr;
 
 @end
