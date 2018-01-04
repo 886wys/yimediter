@@ -8,6 +8,7 @@
 
 #import "YIMEditerParagraphSpacingCell.h"
 #import "YIMScrollSelectView.h"
+#import "NSBundle+YIMBundle.h"
 
 @interface YIMEditerParagraphSpacingCell()<YIMScrollSelectViewDelegate,YIMScrollSelectViewDatasource> {
     CGFloat _minHeight;
@@ -29,7 +30,7 @@
     
     UILabel *titleLabel = [[UILabel alloc]init];
     titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.text = NSLocalizedString(@"行间距", nil);
+    titleLabel.text = [[NSBundle YIMBundle]localizedStringForKey:@"行间距" value:@"行间距" table:nil];
     titleLabel.font = [UIFont systemFontOfSize:12];
     [self.contentView addSubview:titleLabel];
     

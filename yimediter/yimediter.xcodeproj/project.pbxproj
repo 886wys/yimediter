@@ -21,6 +21,7 @@
 		5CB23B621FD163EE000F2F57 /* DefualtParagraphItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB23B611FD163EE000F2F57 /* DefualtParagraphItem.m */; };
 		5CB23B651FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB23B641FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m */; };
 		5CB23B681FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB23B671FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m */; };
+		5CB74A861FFDC5D70001D0C2 /* NSBundle+YIMBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB74A851FFDC5D70001D0C2 /* NSBundle+YIMBundle.m */; };
 		5CBEA0611FBEBB4700D29998 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEA0601FBEBB4700D29998 /* AppDelegate.m */; };
 		5CBEA0641FBEBB4700D29998 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CBEA0631FBEBB4700D29998 /* ViewController.m */; };
 		5CBEA0671FBEBB4700D29998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CBEA0651FBEBB4700D29998 /* Main.storyboard */; };
@@ -77,6 +78,8 @@
 		5CB23B641FD2522C000F2F57 /* YIMEditerParagraphLineIndentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphLineIndentCell.m; sourceTree = "<group>"; };
 		5CB23B661FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YIMEditerParagraphSpacingCell.h; sourceTree = "<group>"; };
 		5CB23B671FD298FF000F2F57 /* YIMEditerParagraphSpacingCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YIMEditerParagraphSpacingCell.m; sourceTree = "<group>"; };
+		5CB74A841FFDC5D70001D0C2 /* NSBundle+YIMBundle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+YIMBundle.h"; sourceTree = "<group>"; };
+		5CB74A851FFDC5D70001D0C2 /* NSBundle+YIMBundle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+YIMBundle.m"; sourceTree = "<group>"; };
 		5CBEA05C1FBEBB4700D29998 /* yimediter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yimediter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBEA05F1FBEBB4700D29998 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5CBEA0601FBEBB4700D29998 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -281,6 +284,8 @@
 				5CED35EE1FC436AA002FAAAE /* UIImage+YIMEditerImageExtend.m */,
 				5C2F6B111FD4245400715E94 /* UIColor+YIMEditerExtend.h */,
 				5C2F6B121FD4245400715E94 /* UIColor+YIMEditerExtend.m */,
+				5CB74A841FFDC5D70001D0C2 /* NSBundle+YIMBundle.h */,
+				5CB74A851FFDC5D70001D0C2 /* NSBundle+YIMBundle.m */,
 			);
 			path = extends;
 			sourceTree = "<group>";
@@ -389,6 +394,7 @@
 				5C7615261FD003DD0032C516 /* YIMEditerParagraphAlignmentCell.m in Sources */,
 				5CB23B621FD163EE000F2F57 /* DefualtParagraphItem.m in Sources */,
 				5CBEA0611FBEBB4700D29998 /* AppDelegate.m in Sources */,
+				5CB74A861FFDC5D70001D0C2 /* NSBundle+YIMBundle.m in Sources */,
 				5CED35E81FC4330F002FAAAE /* YIMEditerSetting.m in Sources */,
 				5CF749121FD10876000061A7 /* YIMEditerDrawAttributes.m in Sources */,
 				5CED35E51FC42B6A002FAAAE /* YIMEditerTextStyleCell.m in Sources */,

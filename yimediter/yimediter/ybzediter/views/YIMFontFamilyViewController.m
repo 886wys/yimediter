@@ -8,7 +8,7 @@
 
 #import "YIMFontFamilyViewController.h"
 #import "YIMEditerFontFamilyManager.h"
-
+#import "NSBundle+YIMBundle.h"
 
 @interface YIMFontFamilyTableViewCell : UITableViewCell
 @property(nonatomic,strong)UILabel *titleLabel;
@@ -59,7 +59,7 @@
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     YIMFontFamilyTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.titleLabel.text = NSLocalizedString(@"你好，世界", nil);
+    cell.titleLabel.text = [[NSBundle YIMBundle]localizedStringForKey:@"你好，世界" value:@"你好，世界" table:nil];
     cell.titleLabel.font = [self.ffmanager fontWithName:[self.ffmanager allRegistFontName][indexPath.row] size:20];
     return cell;
 }

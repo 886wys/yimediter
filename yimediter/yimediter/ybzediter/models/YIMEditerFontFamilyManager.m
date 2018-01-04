@@ -38,8 +38,10 @@ static YIMEditerFontFamilyManager *_defualtFontManager;
 
 -(BOOL)regiestFont:(NSString *)fontName{
     if([UIFont fontWithName:fontName size:16]){
-        [self.reigisterFonts addObject:fontName];
-        return true;
+        if(![self.reigisterFonts containsObject:fontName]){
+            [self.reigisterFonts addObject:fontName];
+            return true;
+        }
     }
     return false;
 }

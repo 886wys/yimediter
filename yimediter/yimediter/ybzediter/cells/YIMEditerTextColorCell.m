@@ -10,6 +10,7 @@
 #import "YIMScrollSelectView.h"
 #import "YIMEditerTextStyle.h"
 #import "UIColor+YIMEditerExtend.h"
+#import "NSBundle+YIMBundle.h"
 
 
 @interface YIMEditerTextColorCell()<YIMScrollSelectViewDelegate,YIMScrollSelectViewDatasource>{
@@ -27,7 +28,7 @@
     _colorArray = [YIMEditerTextStyle styleAllColor];
     
     UILabel *titleLabel = [[UILabel alloc]init];
-    titleLabel.text = NSLocalizedString(@"颜色", nil);
+    titleLabel.text = [[NSBundle YIMBundle]localizedStringForKey:@"颜色" value:@"颜色" table:nil];
     titleLabel.font = [UIFont systemFontOfSize:12];
     [self.contentView addSubview:titleLabel];
     

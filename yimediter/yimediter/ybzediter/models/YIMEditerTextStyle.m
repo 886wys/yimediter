@@ -24,6 +24,9 @@
     self = [[self class]createDefualtStyle];
     if ([attribute.allKeys containsObject:NSFontAttributeName]) {
         UIFont *font = [attribute objectForKey:NSFontAttributeName];
+        if([attribute.allKeys containsObject:@"NSOriginalFont"]){
+            font = [attribute objectForKey:@"NSOriginalFont"];
+        }
         UIFontDescriptor *descroptor = font.fontDescriptor;
         BOOL isItalic = descroptor.fontAttributes[@"NSCTFontMatrixAttribute"] != nil;
         
@@ -169,7 +172,9 @@
             break;
         }
     }
-    NSAssert(isHas, @"");
+    if(!isHas){
+        fontName = [[self class] styleAllFontName].firstObject;
+    }
     _fontName = fontName;
 }
 
