@@ -7,6 +7,7 @@
 //
 
 #import "YIMEditerTextFontFamilyCell.h"
+#import "NSBundle+YIMBundle.h"
 
 @interface YIMEditerTextFontFamilyCell()
 @property(nonatomic,strong)UILabel *titleLabel;
@@ -19,7 +20,7 @@
     [super setup];
     UILabel *label = [[UILabel alloc]init];
     label.translatesAutoresizingMaskIntoConstraints = false;
-    label.text = NSLocalizedString(@"字体", nil);
+    label.text =[[NSBundle YIMBundle]localizedStringForKey:@"字体" value:@"字体" table:nil];
     label.textColor = [UIColor colorWithRed:0x70/255.0 green:0x70/255.0 blue:0x70/255.0 alpha:1];
     label.font = [UIFont systemFontOfSize:14];
     [self.contentView addSubview:label];

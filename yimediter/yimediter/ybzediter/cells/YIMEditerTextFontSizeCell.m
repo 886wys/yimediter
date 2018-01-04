@@ -8,6 +8,7 @@
 
 #import "YIMEditerTextFontSizeCell.h"
 #import "YIMScrollSelectView.h"
+#import "NSBundle+YIMBundle.h"
 
 @interface YIMEditerTextFontSizeCell()<YIMScrollSelectViewDatasource,YIMScrollSelectViewDelegate>{
     NSArray<NSNumber*>* _fontSizeArray;
@@ -28,7 +29,7 @@
     
     //标题Label
     UILabel *titleLabel = [[UILabel alloc]init];
-    titleLabel.text = NSLocalizedString(@"字号", nil);
+    titleLabel.text = [[NSBundle YIMBundle]localizedStringForKey:@"字号" value:@"字号" table:nil];
     titleLabel.font = [UIFont systemFontOfSize:12];
     [self.contentView addSubview:titleLabel];
     

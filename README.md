@@ -15,6 +15,16 @@
 
 如果是自定义字体需要先导入字体到工程，如果是iOS内置字体则不需要
 
+## 使用方式
+```
+#import "YIMEditerTextView.h"
+
+YIMEditerTextView *textView = [[YIMEditerTextView alloc]init];
+textView.frame = self.view.bounds;
+[self.view addSubview:textView];
+
+```
+
 ## Build List
 
 ***

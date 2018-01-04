@@ -8,6 +8,7 @@
 
 #import "YIMEditerParagraphAlignmentCell.h"
 #import "UIImage+YIMEditerImageExtend.h"
+#import "NSBundle+YIMBundle.h"
 
 @interface YIMEditerParagraphAlignmentCell()
 @property(nonatomic,strong)UIButton *leftButton;
@@ -22,7 +23,7 @@
     [super setup];
     
     UILabel *titleLabel = [[UILabel alloc]init];
-    titleLabel.text = NSLocalizedString(@"对齐方式", nil);
+    titleLabel.text = [[NSBundle YIMBundle]localizedStringForKey:@"对齐方式" value:@"对齐方式" table:nil];
     titleLabel.font = [UIFont systemFontOfSize:12];
     [self.contentView addSubview:titleLabel];
     
